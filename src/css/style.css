@@ -1,0 +1,118 @@
+h1
+{
+    text-align: center;
+}
+h4
+{
+    text-align: center;
+}
+
+
+
+.top-section
+{
+    margin:70px 0;
+}
+.title
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title>button
+{
+    margin:0 30px;
+}
+.left-panel
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:1px solid red;
+    padding:30px 5px;
+}
+.controls
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.controls>p
+{
+    margin: 30px auto;
+    font-size:20px;
+    font-weight: bold;
+}
+.remaining-time
+{
+    border:1px solid red;
+    padding:30px 5px;
+}
+
+.clock-holder
+{
+    height:500px;
+    width:100%;
+}
+.clock
+{
+    border:5px solid red;
+    border-radius: 50%;
+    height:450px;
+    width:450px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+.time-holder
+{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.time-holder>.time
+{
+    font-size: 32px;
+}
+.time-holder>span
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    font-size: 32px;
+    padding:0 5px;
+}
+.clock-pointer
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock-pointer>img
+{
+    height: 300px;
+}
+button
+{
+    border:none;
+    width:50px;
+    height:50px;
+    background-color:red;
+    color:white;
+    outline: none;
+}
+

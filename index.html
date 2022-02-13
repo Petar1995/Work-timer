@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Work Timer</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="src/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-section">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <button id="startTimer"><i class="fas fa-play"></i></button>
+                            <h1>Work timer</h1>
+                            <button id="resetTimer"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="left-panel">
+                        <div class="col-md-6">
+                            <h4>Working time</h4>
+                            <div class="controls">
+                                <button id="increaseWorkTime"><i class="fa-solid fa-plus"></i></button>
+                                <p id="startWorkTimeText"></p>
+                                <button id="decreaseWorkTime"><i class="fa-solid fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Break time</h4>
+                            <div class="controls">
+                                <button id="increaseBreakTime"><i class="fa-solid fa-plus"></i></button>
+                                <p id="startBreakTimeText"></p>
+                                <button id="decreaseBreakTime"><i class="fa-solid fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="clock-holder">
+                        <div id="clock" class="clock">
+                            <div class="time-holder">
+                                <div class="time">12</div>
+                                <span>
+                                    <div class="time">9</div>
+                                    <div class="time">3</div>
+                                </span>
+                                <div class="time">6</div>
+                            </div>
+                            <div class="clock-pointer">
+                                <img id="clockPointer" src="src/img/pointer.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="remaining-time">
+                        <h4 id="remainingTimeText">Time until break:</h4>
+                        <h4 id="remainingTime"></h4>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
